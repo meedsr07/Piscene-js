@@ -15,7 +15,7 @@ function yell(input) {
 
 function whisper(input) {
     let str = input.toLowerCase()
-    return str
+    return "*"+ str+ "*"
 }
 
 function capitalize(input) {
