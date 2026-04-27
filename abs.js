@@ -5,8 +5,8 @@ function isPositive(nb) {
     return true
 }
 
-function abs(nb) {
-    if (nb === 0) {
+function abs(nbr) {
+    if (nbr === 0) {
         return 0
     }
     if (!(isPositive(nb))) {
