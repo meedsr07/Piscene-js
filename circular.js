@@ -1,3 +1,3 @@
-let ciruclar = {};
-ciruclar.ciruclar = ciruclar
+let circular = {};
 
+circular.circular = circular
