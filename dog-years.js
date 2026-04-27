@@ -10,7 +10,7 @@ function dogYears(plant , seconds) {
         neptune : 164.79132 ,
     }
     const earthyears = seconds / earthsacondes ;
-    const plantyears = (earthyears / orbitalperiod[plant]*7)
+    const plantyears = (earthyears / orbitalperiod[plant]) *7
     let number = plantyears.toFixed(2)
     return number
 }
