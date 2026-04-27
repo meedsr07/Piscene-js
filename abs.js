@@ -6,6 +6,9 @@ function isPositive(nb) {
 }
 
 function abs(nb) {
+    if (nb === 0) {
+        return 0
+    }
     if (!(isPositive(nb))) {
         nb = nb * -1
     }
