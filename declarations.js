@@ -9,8 +9,8 @@ const obj = {
  undef : undefined 
 }  
 const nested =  {
-    arr = [4 , undefined , '2'] , 
-    obj =  {
+    arr : [4 , undefined , '2'] , 
+    obj :  {
         str : "" , 
         num : 0 ,
         bool : true 
