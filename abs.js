@@ -1,16 +1,11 @@
 function isPositive(nb) {
-    if (nb < 0)  {
-        return false
-    }
-    return true
+    return (nb > 0)
 }
 
 function abs(nbr) {
     if (nbr === 0) {
         return 0
     }
-    if (!(isPositive(nb))) {
-        nb = nb * -1
-    }
-    return nb
+    if (isPositive(nbr)) return nbr
+    return -nbr
 }
