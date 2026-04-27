@@ -1,0 +1,17 @@
+function dogYears(plant , seconds) { 
+    let earthsacondes  = 31557600 ; 
+    const orbitalperiod =  {
+        earth : 1.0 ,
+        mercury  :  0.2408467,
+        venus : 0.61519726 ,
+        jupiter : 11.862615 ,
+        saturn :  29.447498 ,
+        uranus : 84.016846,
+        neptune : 164.79132 ,
+    }
+    const earthyears = seconds / earthsacondes ;
+    const plantyears = earthyears / orbitalperiod[plant]
+    let number = plantyears.toFixed(2)
+    return number
+}
+
