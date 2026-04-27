@@ -19,7 +19,7 @@ function whisper(input) {
 }
 
 function capitalize(input) {
-let str =  input[0].toUpperCase()+input.slice(1,input.length)
+let str =  input[0].toUpperCase()+(input.slice(1,input.length).toLowerCase())
 return str 
 }
 
