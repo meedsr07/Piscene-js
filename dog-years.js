@@ -12,6 +12,7 @@ function dogYears(plant , seconds) {
     }
     const earthyears = seconds / earthsacondes ;
     const plantyears = (earthyears / orbitalperiod[plant]) *7
+    
     return Number(plantyears.toFixed(2));
 }
 
