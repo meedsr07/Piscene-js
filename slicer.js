@@ -1,11 +1,13 @@
-function slice(input , start , end) {
-  
-    let res = Array.isArray(input) ? [] : "" ;
+function slice(input , start , end = input.length) {
+    let isArr = Array.isArray(input);
+    let res = isArr? [] : "" ;
     for (let i = start ; i < end ; i++) {
+    
         let v = input[i]
-        if (Array.isArray(input)) {
+        if (isArr) {
             res.push(v)
         }else{
+        
             res+= (v)
         }
     }
