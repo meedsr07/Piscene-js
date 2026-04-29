@@ -39,10 +39,10 @@ function modulo(a , b) {
     if  (b < 0) y = -b; 
     while (x >= y) {
         x -= y 
-        res = x
+   
     }
     if ((a < 0 && b > 0)||(a> 0 && b < 0)) {
-        return -res
+        return -x
     }
-    return res
+    return x
 }
