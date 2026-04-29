@@ -32,17 +32,7 @@ function divide(a , b) {
 } 
 
 function modulo(a , b) {
-    let res = 0 ;
-    let x = a ;
-    let y = b ;
-    if (a < 0) x = -a ;
-    if  (b < 0) y = -b; 
-    while (x >= y) {
-        x -= y 
-   
-    }
-    if ((a < 0 && b > 0)||(a> 0 && b < 0)) {
-        return -x
-    }
-    return x
+ return a - (multiply(divide(a ,b) , b))
 }
+
+
