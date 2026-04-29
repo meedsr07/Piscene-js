@@ -1,17 +1,35 @@
-function trunc(arr) {
+// function trunc(arr) {
     
+//     let res = [] ;
+//     for (let i = 0 ; i < arr.length ; i++) {
+//            let nb = arr[i]
+//            r = nb - mod(nb ,1)  
+//            res.push(r)  
+//     }
+//     return res
+// }
+
+function trunc(arr) {
     let res = [] ;
     for (let i = 0 ; i < arr.length ; i++) {
-           let nb = arr[i]
-           r = nb - mod(nb ,1)  
-           res.push(r)  
+        let nb = arr[i];
+        let step  = 1 ;
+        let steps = [] ;
+        while (step <= nb) {
+            steps.push(step)
+            step = step * 2
+        }
+        let r = 0 ;
+        for (let i = steps.length -1 ; i >= 0 ; i--) {
+            if  (r < nb) {
+                r += steps[i]
+            }
+        }
+        res.push(r)
     }
     return res
 }
 
-function mod(a, b) {
-  return a - parseInt(a / b) * b;
-}
 
 function round(arr) {
     let res = [];
