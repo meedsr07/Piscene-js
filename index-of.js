@@ -20,11 +20,12 @@ function lastIndexOf(arr , value , start = arr.length -1 ) {
     for ( let i = start; i >= 0; i--) {
         if (arr[i] === value) {
             res = i 
+            break
         }
     }
     return res
 }
-
+console.log(lastIndexOf([1, 2, 3, 4, 5, 4, 3, 2, 1], 2))
 
 function includes(arr , value) {
     for (let i= 0 ; i < arr.length ; i++) {
