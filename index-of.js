@@ -12,20 +12,18 @@ function indexOf(arr , value ,  start = 0) {
     return res
 }
 
-function lastIndexOf(arr , value , start = 0) { 
-    
+function lastIndexOf(arr , value , start = arr.length -1 ) { 
     let res = -1 ; 
     if (start < 0){
         start = arr.length + start
     } 
-    for ( let i = start ; i < arr.length ; i++) {
+    for ( let i = start; i >= 0; i--) {
         if (arr[i] === value) {
             res = i 
         }
     }
     return res
 }
-
 
 
 function includes(arr , value) {
