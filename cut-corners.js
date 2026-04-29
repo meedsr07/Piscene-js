@@ -1,20 +1,16 @@
-// function trunc(arr) {
-    
-//     let res = [] ;
-//     for (let i = 0 ; i < arr.length ; i++) {
-//            let nb = arr[i]
-//            r = nb - mod(nb ,1)  
-//            res.push(r)  
-//     }
-//     return res
-// }
+
 
 function trunc(arr) {
     let res = [] ;
     for (let i = 0 ; i < arr.length ; i++) {
+        let isnegative = false ;
         let nb = arr[i];
         let step  = 1 ;
         let steps = [] ;
+        if (nb < 0) {
+            nb = nb * -1
+            isnegative = true
+        }
         while (step <= nb) {
             steps.push(step)
             step = step * 2
@@ -24,6 +20,11 @@ function trunc(arr) {
             if  (r < nb) {
                 r += steps[i]
             }
+            
+        }
+        if (isnegative) {
+                r = r * -1
+        
         }
         res.push(r)
     }
