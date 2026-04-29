@@ -2,6 +2,9 @@ function indexOf(arr , value ,  start = 0) {
      if (start < 0){
         start = arr.length + start
     } 
+    if (start > arr.length) {
+        start = arr.length
+    }
     let res = -1 ;
     for (let i = start; i < arr.length ; i++) {
         if (arr[i] === value) {
@@ -17,6 +20,9 @@ function lastIndexOf(arr , value , start = arr.length -1 ) {
     if (start < 0){
         start = arr.length + start
     } 
+    if (start > arr.length) {
+        start = arr.length
+    }
     for ( let i = start; i >= 0; i--) {
         if (arr[i] === value) {
             res = i 
