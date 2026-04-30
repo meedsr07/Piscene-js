@@ -1,7 +1,7 @@
-function trunc(arr) {
-    let res = []; 
-    for ( let i = 0 ; i < arr.length ; i++) {
-        let nb = arr[i]
+function trunc(nb) {
+    let res = 0; 
+   
+        
         let step = 1 
         let steps = [] ;
         let isnegative = false ;
@@ -27,50 +27,39 @@ function trunc(arr) {
             r = r * -1
             isnegative = false
         }
-        res.push(r)
-    }
+        res = (r)
+    
     return res
 }
 
-function round(arr) {
-    let res = [];
-    
-    for (let i = 0 ; i < arr.length ; i++ ) {
-        let nb = arr[i]
+function round(nb) {
+    let res = 0;
+
         let add = 0.5 ;
         if (nb < 0) {
             add = -0.5;
         }
         let r = nb + add
-        res.push(r)
-    }
+        res =(r)
+    
     res = trunc(res)
     return res
 }
 
-function floor(arr) {
-    let res = [] ;
-    for (let i = 0 ; i < arr.length ; i++) {
-        nb = arr[i]
-        if (nb< 0 ) {
+function floor(nb) {
+   
+        if (nb< trunc(nb) ) {
             nb = nb - 1
         }
-        res.push(nb)
-    }
-    res = trunc(res)
-    return res 
+    return  trunc(nb)
 }
 
-function ceil(arr) {
-    let res = [] ;
-    for (let i = 0 ; i < arr.length ; i++) {
-        nb = arr[i]
-        if (nb > 0 ) {
+function ceil(nb) {
+   
+        
+        if (nb > trunc(nb) ) {
             nb = nb + 1
         }
-        res.push(nb)
-    }
-    res =  trunc(res)
-    return res
+    return trunc(nb)
 }
 
