@@ -35,4 +35,3 @@ function join(arr , sep) {
     return res
 } 
 
-console.log(split('ee,ff,g,', ','), ",")
