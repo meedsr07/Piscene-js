@@ -1,11 +1,10 @@
 function triangle( str , nb) {
-let res = "" ; 
-for (let i = 0 ; i <= nb ; i++) {
-    res += str.repeat(i)
-    if (i != nb) {
-        res += "\n"
-    }
+let res =  [] ; 
+for (let i = 1 ; i <= nb ; i++) {
+   res.push(str.repeat(i))
 }
-return res
+let triangle =res.join("\n") ;
+return triangle
 }
 
+console.log(triangle("#" , 4))
