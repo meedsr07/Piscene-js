@@ -19,9 +19,7 @@ function split(input , sep) {
         }
        
     }
-    if (word != "") {
-        words.push(word)
-    }
+    words.push(word)
     return words
 }
 
@@ -37,3 +35,4 @@ function join(arr , sep) {
     return res
 } 
 
+console.log(split('ee,ff,g,', ','), ",")
