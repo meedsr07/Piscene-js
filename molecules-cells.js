@@ -19,7 +19,7 @@ return res
 function RNA(d) {
     let res = "" ; 
     for (let i = 0 ; i < d.length ; i++) {
-    e = r[i] 
+    e = d[i] 
     if (e === "G") {
         e = "C"
     }else if (e=== "T") {
@@ -35,3 +35,4 @@ return res
 
 }
 
+console.log(RNA('TAGC'))
