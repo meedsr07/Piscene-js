@@ -1,7 +1,7 @@
 function DNA(r) {
 let res = "" ; 
 for (let i = 0 ; i < r.length ; i++) {
-    e = r[i] 
+    let  e = r[i] 
     if (e === "C") {
         e = "G"
     }else if (e=== "A") {
@@ -19,7 +19,7 @@ return res
 function RNA(d) {
     let res = "" ; 
     for (let i = 0 ; i < d.length ; i++) {
-    e = d[i] 
+    let e = d[i] 
     if (e === "G") {
         e = "C"
     }else if (e=== "T") {
