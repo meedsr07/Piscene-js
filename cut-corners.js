@@ -74,5 +74,3 @@ function ceil(arr) {
     return res
 }
 
-const nums = [3.7, -3.7, 3.1, -3.1]
-console.log(ceil(nums))
