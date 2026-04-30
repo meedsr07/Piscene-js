@@ -9,14 +9,15 @@ function split(input , sep) {
         return words
     }
     for (let i = 0 ; i < input.length ; i++) {
-        let c = input[i]
-        if (c != sep) {
-            word += c
-        }else if (word != "") {
+        let part = input.slice(i , i+sep.length)
+        if (part === sep) {
             words.push(word)
             word = ""
+            i+= sep.length -1
+        }else {
+            word += input[i]
         }
-        
+       
     }
     if (word != "") {
         words.push(word)
