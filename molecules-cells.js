@@ -17,7 +17,8 @@ return res
 }
 
 function RNA(d) {
-    for (let i = 0 ; i < r.length ; i++) {
+    let res = "" ; 
+    for (let i = 0 ; i < d.length ; i++) {
     e = r[i] 
     if (e === "G") {
         e = "C"
