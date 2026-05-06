@@ -40,6 +40,8 @@ function isFuture(date) {
 }
 
 
+
+
 function isPast(date) {
 
     if (isValid(date)) {
@@ -47,6 +49,6 @@ function isPast(date) {
             return true
         }
     }
-    return false
+    return false 
 }
 
