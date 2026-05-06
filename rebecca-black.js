@@ -32,5 +32,6 @@ function isLastDayOfMonth(date) {
     if (newDate.getDate() === 1) {
         return true
     } 
-    return false
+    return false 
+    
 }
