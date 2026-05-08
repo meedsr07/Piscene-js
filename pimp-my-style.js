@@ -11,8 +11,8 @@ if (!remove) {
         button.classList.toggle('unpimp')
     }
 }else  {
-    button.classList.remove(styles[index])
     index--
+    button.classList.remove(styles[index])
     if (index === 0 ) {
         remove = false
         button.classList.toggle('unpimp')
