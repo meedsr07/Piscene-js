@@ -2,7 +2,7 @@ export function build(num) {
     let count = 1 ;
     const intrvel = setInterval(() => {
          
-        if (count === num) {
+        if (count > num) {
             clearInterval(intrvel) 
             return
         }
