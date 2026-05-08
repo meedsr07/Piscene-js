@@ -7,7 +7,7 @@ export function build(num) {
             return
         }
         const elment = document.createElement('div') 
-        elment.id = "brick -" + count 
+        elment.id = "brick-" + count 
         if (count %3 === 2) {
             elment.dataset.foundation = 'true'
         }
