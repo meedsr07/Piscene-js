@@ -1,5 +1,6 @@
-const argument = process.argv[2]
+import { writeFile } from "node:fs/promises";
 
+const argument = process.argv[2]
 
 function revers(argument) {
     const split = argument.split(" ");
@@ -18,4 +19,5 @@ function revers(argument) {
     return result.join(" ");
 }
 
-console.log(revers(argument))
+
+writeFile("verydisco-forever.txt" , revers(argument))
