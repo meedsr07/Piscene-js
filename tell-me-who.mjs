@@ -22,5 +22,5 @@ res.sort((a, b) => {
 
 for (let i = 0; i < res.length; i++) {
     let g = res[i]
-    console.log(i + 1 + " " + g.lastname +" "+ g.firstname)
+    console.log(i + 1 + ". " + g.lastname +" "+ g.firstname)
 }
